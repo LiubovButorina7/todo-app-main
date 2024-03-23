@@ -67,7 +67,7 @@ function initTodoListFromStorage() {
 function handleResizeScreen() {
   const ulElems = ulList.querySelectorAll('.icon-cross');
   ulElems.forEach((elem) => {
-    if (window.matchMedia("(max-width: 375px)").matches) {
+    if (window.matchMedia("(max-width: 376px)").matches) {
       elem.classList.remove('disabled');
     } else {
       elem.classList.add('disabled');
@@ -82,7 +82,7 @@ function handleResizeScreen() {
 function footerSectionTransfer() {
   const stateFooter = footer.querySelector('.state');
   const mobileState = mobileSection.querySelector('.state');
-  if (window.matchMedia("(max-width: 375px)").matches) {
+  if (window.matchMedia("(max-width: 376px)").matches) {
     if (!mobileState) {
       mobileSection.append(stateFooter); 
     }
@@ -106,7 +106,7 @@ function resetInitData() {
 }
 
 function switchMobileStatusSection() {
-  if (window.matchMedia("(max-width: 375px)").matches && todoList.length) {
+  if (window.matchMedia("(max-width: 376px)").matches && todoList.length) {
     mobileSection.style.display = 'block';
   } else {
     mobileSection.style.display = 'none';

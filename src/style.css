@@ -324,7 +324,7 @@ a:visited {
   color: hsl(234, 39%, 85%);
 }  
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   .light_mode {
     background: url(../images/bg-mobile-light.jpg);
     background-size: 100%;
