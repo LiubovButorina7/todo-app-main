@@ -131,6 +131,8 @@ input[type="text"]:active, :focus {
 
   font-family: inherit;
   font-size: 20px;
+
+  overflow-y: hidden;
 }
 
 .text-dark {
@@ -142,6 +144,11 @@ ul {
   margin: 0px;
   padding:0px;
   max-height: 325px;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  scroll-behavior: smooth;
 
   overflow-y: auto;
 }
