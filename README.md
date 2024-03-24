@@ -25,19 +25,23 @@ Users should be able to:
 ## Screenshorts:
 
 - initial state (data are loaded from Local Storage)
+
 ![](./images/screenshots/todoApp1.png) 
 
 ![](./images/screenshots/todoApp2.png)
 
 - active state
+
 ![](./images/screenshots/todoApp3.png)
 
 ![](./images/screenshots/todoApp4.png)
 
 - dark mode
+
 ![](./images/screenshots/todoApp5.png)
 
-- adaptive view (screen's width is equal to 375px)
+- adaptive view (screen's width is equal to 375px, for example iPhone 6/7/8 iOS 11, iPhone 12/13 mini iOS 14.6)
+
 ![](./images/screenshots/todoApp7.png)
 
 ![](./images/screenshots/todoApp6.png)
