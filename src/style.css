@@ -127,7 +127,7 @@ input[type="text"]:active, :focus {
   width: 100%;
   
   background-color: hsl(0, 0%, 98%);
-  border-radius: 10px;
+  border-radius: 5px;
 
   font-family: inherit;
   font-size: 20px;
@@ -145,8 +145,8 @@ ul {
   padding:0px;
   max-height: 325px;
 
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 
   scroll-behavior: smooth;
 
