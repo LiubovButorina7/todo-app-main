@@ -190,6 +190,7 @@ function handleResizeScreen() {
   switchMobileStatusSection();
 }
 function footerSectionTransfer() {
+  console.log('kuku');
   var stateFooter = footer.querySelector('.state');
   var mobileState = mobileSection.querySelector('.state');
   if (window.matchMedia("(max-width: 376px)").matches) {
@@ -198,6 +199,13 @@ function footerSectionTransfer() {
     }
   } else if (!stateFooter) {
     footer.insertBefore(mobileState, footer.lastElementChild);
+  }
+}
+function switchMobileStatusSection() {
+  if (window.matchMedia("(max-width: 376px)").matches && todoList.length) {
+    mobileSection.style.display = 'block';
+  } else {
+    mobileSection.style.display = 'none';
   }
 }
 function resetInitData() {
@@ -210,13 +218,7 @@ function resetInitData() {
     list.classList.remove('disabled');
   }
   footerSectionTransfer();
-}
-function switchMobileStatusSection() {
-  if (window.matchMedia("(max-width: 376px)").matches && todoList.length) {
-    mobileSection.style.display = 'block';
-  } else {
-    mobileSection.style.display = 'none';
-  }
+  switchMobileStatusSection();
 }
 function countUndoneItems() {
   var count = todoList.reduce(function (acc, todo) {
@@ -438,7 +440,7 @@ function createTodo() {
   li.prepend(doneItem);
   var del = document.createElement('img');
   del.className = 'icon-cross';
-  if (window.matchMedia("(min-width: 376px)").matches) {
+  if (window.matchMedia("(min-width: 377px)").matches) {
     del.className += ' disabled';
   }
   del.src = _iconCross.default;
@@ -536,7 +538,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43521" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39361" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
