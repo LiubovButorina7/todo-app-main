@@ -80,6 +80,7 @@ function handleResizeScreen() {
 }
 
 function footerSectionTransfer() {
+  console.log('kuku');
   const stateFooter = footer.querySelector('.state');
   const mobileState = mobileSection.querySelector('.state');
   if (window.matchMedia("(max-width: 376px)").matches) {
@@ -90,6 +91,14 @@ function footerSectionTransfer() {
     footer.insertBefore(mobileState, footer.lastElementChild);
   }
 }  
+
+function switchMobileStatusSection() {
+  if (window.matchMedia("(max-width: 376px)").matches && todoList.length) {
+    mobileSection.style.display = 'block';
+  } else {
+    mobileSection.style.display = 'none';
+  } 
+}
 
 function resetInitData() {
   newTodo.value = '';
@@ -103,14 +112,7 @@ function resetInitData() {
   }
   
   footerSectionTransfer();
-}
-
-function switchMobileStatusSection() {
-  if (window.matchMedia("(max-width: 376px)").matches && todoList.length) {
-    mobileSection.style.display = 'block';
-  } else {
-    mobileSection.style.display = 'none';
-  } 
+  switchMobileStatusSection();
 }
 
 function countUndoneItems() {
