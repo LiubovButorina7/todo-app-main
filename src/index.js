@@ -376,7 +376,7 @@ function createTodo (todoItem = {}) {
 
   const del = document.createElement('img');
   del.className = 'icon-cross';
-  if (window.matchMedia("(min-width: 376px)").matches) {
+  if (window.matchMedia("(min-width: 377px)").matches) {
     del.className += ' disabled';
   }
   del.src = iconCross;
