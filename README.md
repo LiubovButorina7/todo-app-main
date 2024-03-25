@@ -6,7 +6,7 @@ This is a solution to the [Todo app challenge on Frontend Mentor](https://www.fr
 
 ## Application functionality:
 
-Users should be able to:
+Users are able to:
 - add new todos to the list
 - mark todos as complete
 - delete todos from the list
