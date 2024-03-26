@@ -66,7 +66,7 @@ body {
   margin-bottom: 2rem;
 
   width: 100%;
-  height: 70px;
+  height: 65px;
   
   background-color: hsl(0, 0%, 98%);
 
@@ -77,10 +77,10 @@ body {
   display: inline-block;
   position: relative;
   top: 20px;
-  left: 20px;
+  left: 24px;
 
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
 
   border-radius: 15px;
   border: thin solid hsl(233, 11%, 84%);
@@ -90,11 +90,11 @@ body {
 
 .icon-done {
   position: absolute;
-  top: 28px;
-  left: 29px;
+  top: 26px;
+  left: 31px;
   
-  width: 15px;
-  height: 12px;
+  width: 13px;
+  height: 11px;
 
   cursor: pointer;
 }
@@ -107,7 +107,7 @@ input[type="text"] {
   width: 85%;
   position: relative;
   top: 12px;
-  left: 36px;
+  left: 32px;
   font-family: inherit;
   font-size: 20px;
   border: none;
@@ -166,13 +166,13 @@ li {
 .done-item {
   display: inline-block;
   position: relative;
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
 
   border-radius: 15px;
   border: thin solid hsl(233, 11%, 84%);
-  top: 19px;
-  left: 20px;
+  top: 20px;
+  left: 24px;
   cursor: pointer;
 }
 
@@ -182,11 +182,11 @@ li {
 
 .icon-done-item {
   position: absolute;
-  left: 29px;
-  top: 27px;
+  left: 31px;
+  top: 26px;
 
-  width: 15px;
-  height: 12px;
+  width: 13px;
+  height: 11px;
   cursor: pointer;
   box-sizing: border-box;
   
@@ -194,8 +194,8 @@ li {
 
 .text-item {
   position: relative;
-  top: 10px;
-  left: 44px;
+  top: 13px;
+  left: 40px;
 
   color: hsl(235, 19%, 35%);
 
@@ -227,8 +227,8 @@ li {
 }
 
 .footer {
-  margin: 20px 5px;
-  font-size: 16px;
+  margin: 16px 5px;
+  font-size: 14px;
   color: hsl(236, 9%, 61%);
   
   display:flex;  
@@ -249,11 +249,10 @@ li {
   justify-content: space-around;
   flex-grow: 1;
   margin:auto;
-  width:300px;
+  width:270px;
 
   color: hsl(236, 9%, 61%);
   
-  font-size: 18px;
   font-weight: 700;
 
   cursor:pointer;
@@ -303,12 +302,12 @@ li {
 }
 
 .attribution {
-  margin: 20px auto;
+  margin: 30px auto;
   padding: 0 30px;
   text-align: center;
   
   color: hsl(235, 19%, 35%);
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .attribution-dark {
